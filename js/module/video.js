@@ -47,25 +47,25 @@ function progressTime(){
     let minutes = Math.floor(player.currentTime / 60);
     let seconds = Math.floor(player.currentTime - minutes * 60);
     let minuteValue;
-    let secondvalue;
+    let secondValue;
 
     if (minutes<10){
-        minutevalue = "0" + minutes;
+        minuteValue = "0" + minutes;
     } else {
-        minutevalue = minutes;
+        minuteValue = minutes;
     }
 
     if (seconds<10) {
-        secondvalue = "0" + seconds;
+        secondValue = "0" + seconds;
     } else {
-        secondvalue = Seconds;
+        secondValue = Seconds;
     }
 
-    let mediaTime = minutevalue + ":" + secondvalue;
+    let mediaTime = minuteValue + ":" + secondValue;
     timeLable1.textContent = mediaTime;
 
     caption.addEventListener("click",()=>{
-        player.appendChild = '<track lable = "English" kind="subtitles" srclang="en" src="vtt/countdown.vtt">';
+        player.appendChild = '<track lable = "English" kind="subtitles" srclang="en" src="vtt/murder.vtt">';
     });
 
     mute.addEventListener("click", ()=>{
