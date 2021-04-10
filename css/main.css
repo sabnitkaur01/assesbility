@@ -1,0 +1,30 @@
+video, audio {
+    width: 100%;
+}
+
+.controls {
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    height: 100%;
+    width: 30%;
+    margin: 0 auto;
+    cursor: pointer;
+    background: none;
+
+}
+
+.custom-controls img{
+                width: 3vh;
+                height: auto;
+                margin-top: 15px;
+                margin-bottom: 15px;
+
+                margin-right: 10px; 
+            } 
