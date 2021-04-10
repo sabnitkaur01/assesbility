@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Accessibility - Research Project </title>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>A/V Accessibility</h3>
+        <p>media Accessibility</p>
+
+        <div>
+            <ul class="nav bg-light">
+                <li class="nav-item">
+                    <a href="#movie" id="movie-tab" class="nav-link active" data-toggle="tab"> Movie </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#music" id="music-tab" class="nav-link" data-toggle="tab"> Music </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#show" id="show-tab" class="nav-link" data-toggle="tab"> Show </a>    
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="movie">
+                <div class="innerContent">
+                    <div>
+                        <video class="container">
+                            <source src="video/countdown.mp4" type="video/mp4"/>
+                            <track label="English" kind="subtitles" srclang="en" src="vtt/Countdown Phone Shop Scene.mp4.vtt">
+
+                        </video>
+
+
+                        <div class="progress-bar d-flex flex-row justify-content-center">
+                            <div class="time"> 00:00 </div>
+                            <progress class="container" id="progress" value="0" min="0"></progress>
+                        </div>
+
+                        <div class="controls container d-flex flex-row">
+                            <button class="play" data-media="0"><i class="play circle icon"></i></button>
+                            <button class="replay" data-media="1"><i class="replay circle icon"></i></button>
+                            <button class="rewind" data-media="2"><i class="backward icon"></i></button>
+                            <button class="forward" data-media="3"><i class="forward icon"></i></button>
+                            <button class="caption" data-media="4"><i class="closed captioning outline icon"></i></button>
+                            <button id="mute" type="button" data-caption="mute" data-media="5"><i class="volume up icon"></i></button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- movie -->
+
+            <div class="tab-pane fade" id="music">
+                <div class="innerContent">
+                    <audio class="container">
+                        <source src="music/Justin Bieber - Intentions (Lyrics) ft. Quavo.mp3" type="audio/mp3"/>
+
+                    </audio>
+                    <div class="thumbnail container d-flex flex-column justify-content-center align-items-center m-auto">
+                        <img src="images/in.jpeg" alt="audio thumbnail">
+                        <div class="audio-about mt-3">
+                            <h2>Intentions</h2>
+                            <p>Justin Bieber</p>
+                        </div>
+
+                        <div class="progress-bar-con">
+                            <span id="current-time"></span>
+                            <span id="duration"></span>
+                            <div class="progress"></div>
+
+                        </div>
+
+                        <div class="custom-controls d-flex">
+                            <img src="images/play.svg" data-button="0" alt="play"> 
+                            <img src="images/pause.svg" data-button="1" alt="pause"> 
+                            <img src="images/rewind.svg" data-button="2" alt="rewind"> 
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="transcript">
+                    <a href="button" class="btn small btn-outline-secondary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <img style="margin-right: 15px;" src="https://img.icons8.com/ios-filled/30/000000/subtitles.png"/>transcript
+
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body col-12">
+                            [Music] <br>
+                            Picture perfect, you don't need no filter<br>
+                            Gorgeous, make 'em drop dead, you're a killer<br>
+Shower you with all my attention<br><br>
+Yeah, these are my only intentions<br><br>
+Stay in the kitchen cookin' up, got your own bread<br><br>
+Heart full of equity or an asset<br><br>
+Make sure that you don't need no mentions<br><br>
+Yeah, these are my only intentions<br><br>
+Shout out to your mom and dad for makin' you<br><br>
+Standin' ovation, they did a great job raisin' you<br><br>
+When I create you're my muse<br><br>
+That kind of smile that makes the news<br><br>
+Can't nobody throw shade on your name in these streets<br><br>
+Triple threat, you're a boss, you a bae, you a beast<br><br>
+You make it easy to choose<br><br>
+You got a mean touch, I can't refuse (No, I can't refuse it)<br><br>
+Picture perfect, you don't need no filter<br><br>
+Gorgeous, make 'em drop dead, you're a killer<br><br>
+Shower you with all my attention<br><br>
+Yeah, these are my only intentions<br><br>
+Stay in the kitchen cookin' up, got your own bread<br><br>
+Heart full of equity or an asset<br><br>
+Make sure that you don't need no mentions<br><br>
+Yeah, these are my only intentions<br><br>
+Already passed, you don't need no approval<br><br>
+Good everywhere, don't worry 'bout no refusal<br><br>
+Second to none, you got the upper hand now<br><br>
+Don't need a sponsor, nope, you're the brand now<br><br>
+You're my rock, my Colorado<br><br>
+Got that ring, just like Toronto<br><br>
+Lovin' you now, a little more tomorrow<br><br>
+That's how I feel, act like you know that you are<br><br>
+Picture perfect, you don't need no filter<br><br>
+Gorgeous, make 'em drop dead, you're a killer<br><br>
+Shower you with all my attention<br><br>
+Yeah, these are my only intentions<br><br>
+Stay in the kitchen cookin' up, got you're own bread (Whip it)<br><br>
+Heart full of equity or an asset (Asset)<br><br>
+Make sure that you don't need no mentions (Yeah, yeah)<br><br>
+Yeah, these are my only intentions (Quavo)<br><br>
+No cap, no pretendin'<br><br>
+You don't need mentions (No cap)<br><br>
+Got 'em sayin' "goals", they don't wanna be independent ('Pendent)<br><br>
+Tell them to mind your business (Woo), we in our feelings<br><br>
+It's fifty-fifty percentage (Fifty)<br><br>
+Attention, we need commitment (Oh)<br><br>
+We got it both admitted (Both)<br><br>
+It's funny we both listen (Both)<br><br>
+It's a blessing (Blessing) 'cause we both get it (Both)<br><br>
+You the best thing and I don't need a witness (Best thing)<br><br>
+I'ma find me a ring and pray it's perfect fitted (Perfect, perfect)<br><br>
+Picture perfect, you don't need no filter (No filter)<br><br>
+Gorgeous, make 'em drop dead, you a killer (Oh-oh)<br><br>
+Shower you with all my attention (I will)<br><br>
+Yeah, these are my only intentions (Yeah)<br><br>
+Stay in the kitchen cookin' up, got your own bread (You do)<br><br>
+Heart full of equity, you're an asset (Uh-uh)<br><br>
+Make sure that you don't need no mentions (No mentions)<br><br>
+Yeah, these are my only intentions<br><br>
+Only intentions<br><br>
+That's all I plan to do<br><br>
+
+
+                        </div>
+                 </div>
+           </div>
+        </div>
+
+        <!-- show -->
+
+        <div class="tab-pane fade" id="show">
+            <div class="innerContent">
+                <div class="avenge-movie">
+                    <video class="container shows" data-button="0">
+                        <source src="video/murder.mp4" type="video/mp4"/>
+                        <track label="English" kind="subtitles" srclang="en" src="vtt/How to Get Away With Murder 4x13 Annalise's Speech to the....vtt">
+
+                        </video>
+
+
+                        <div class="progress-con d-flex justify-content-center">
+                            <div class="timeshow"> 00:00 </div>
+                            <progress class="container" id="progress" value="0" min="0"></progress>
+                        </div>
+
+                        <div class="controls container d-flex justify-content-center show-controls">
+                            <button class="playpauseshow" data-media="6"><i class="playpauseshow icon"></i></button>
+                            <button class="stopshow" data-media="7"><i class="stop show icon"></i></button>
+                            <button class="rewind" data-media="8"><i class="backward icon"></i></button>
+                            <button class="forward" data-media="9"><i class="forward icon"></i></button>
+                            <button class="captionshow" data-media="10"><i class="closed captioning outline icon"></i></button>
+                            <button id="muteshow" type="button" data-media="11"><i class="volume up icon"></i></button>
+
+                        </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+         
+
+
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
